@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Mini Website</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      background-color: #e0f7fa;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #006064;
+      font-size: 32px;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #004d40;
+      font-size: 18px;
+    }
+
+    /* Card design */
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .card h2 {
+      color: #00796b;
+    }
+
+    .card p {
+      color: #004d40;
+      font-size: 16px;
+    }
+
+    .card button {
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <h1>Welcome 😊</h1>
+  <p>আমি মোবাইল দিয়ে Website বানানো শিখছি</p>
+   <a href="contact.html">Contact</a>
+  <!-- Card -->
+  <div class="card">
+    <h2>My First Card</h2>
+    <a href="about.html">About Me</a>
+    <p>এটা একটি simple card design।</p>
+    <button onclick="cardAction()">Click Me 😄</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Function for button click
+    function cardAction() {
+      // আগের কাজ
+      alert("Hello! 🎉");
+
+      // Card color change
+      const card = document.querySelector(".card");
+      card.style.backgroundColor = "#ffe0b2";
+
+      // Card text change
+      card.querySelector("p").textContent = "Text Changed! 😎";
+    }
+  </script>
+
+</body>
+</html>
